@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="Shop.css">
+    <style>
+   .product img {
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .product img {
+        height: 200px;
+    }
+}
+   
+   
+      #featured>div.row.mx-auto.container>nav>ul>li.page-item.active>a {
+          background-color: black;
+      }
+      
+      #featured>div.row.mx-auto.container>nav>ul>li:nth-child(n):hover>a {
+          background-color: coral;
+          color: #fff;
+      }
+      
+      .pagination a {
+          color: #000;
+      }
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <div class="container">
+          <img src="logo.jpeg" alt=" logo" width="100" height="100">
+          <h1>Tea House</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i id="bar" class="fas fa-bars"></i></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+                 
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="Contact-Us.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <i class="fal fa-search"></i>
+                      <i onclick="window.location.href='cart.html';" class="fal fa-shopping-bag"></i>
+                  </li>
+
+          </div>
+      </div>
+  </nav>
+  <!-- Products-->
+  <section id="featured" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+      <hr class="mx-auto">
+  </div> 
+    <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="hibiscus.jpeg" alt = "">
+            <div class="star">
+            
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Rose Hibiscus tea</h5>
+            <p>Fruity and sweet</p>
+            <p>with a hints of sour notes</p>
+            <h4 class="p-price">$15.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="mint.jpeg" alt="" >
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Mint Tea</h5>
+            <p>Earthy , clean and refreshing</p>
+            <h4 class="p-price">$10.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="orange-lemonade.jpeg" alt="" >
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Orange Lemonade Tea</h5>
+            <p>Citrusy and tart</p>
+            <h4 class="p-price">$19.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="berries&cream.jpeg" alt="" >
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Berries & Cream Tea</h5>
+            <p>Sweet and mellow with </p>
+            <p>a hint of vanilla</p>
+            <h4 class="p-price">21.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="product text-center col-lg-3 col-md-6 col-12">
+              <img class="img-fluid mb-3" src="greentea.jpeg" alt="" >
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Royal Green Tea</h5>
+              <p>Sweet and nutty with</p>
+              <p>a hint of bitterness </p>
+              <h4 class="p-price">$17.99</h4>
+              <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-6 col-12">
+              <img class="img-fluid mb-3" src="berry-rose.jpeg" alt="">
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Sweet Berry Rose Tea</h5>
+              <p>Sweet and soft floral</p>
+              <h4 class="p-price">$16.99</h4>
+              <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-6 col-12">
+              <img class="img-fluid mb-3" src="earl-grey.jpeg" alt="" >
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Calming Earl Grey Tea</h5>
+              <p>Black tea base with hints</p>
+              <p> of floral and citrus</p>
+              <h4 class="p-price">$23.99</h4>
+              <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-6 col-12">
+              <img class="img-fluid mb-3" src="BluePeaFlower.jpeg" alt="" >
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+            
+              <h5 class="p-name">Butterfly Pea Flower tea</h5>
+              <p>Mildly sweet floral</p>
+              <h4 class="p-price">21.99</h4>
+              <button class="buy-btn">Buy Now</button>
+      </div>  
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="mushroom.jpg" alt="" >
+
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Mushroom cup w/ infuser </h5>
+           <p></p>
+            <h4 class="p-price">$39.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="cat-tea-pot.jpg" alt="" >
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Cat Tea Infuser</h5>
+            <h4 class="p-price">$36.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="teapot.jpg" alt="" >
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Glass TeaPot Infuser</h5>
+            <h4 class="p-price">$21.99</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-6 col-12">
+            <img class="img-fluid mb-3" src="bluecup.jpg" alt="">
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Blue Rose Tea Cup</h5>
+            <h4 class="p-price">21.99</h4>
+            <button class="buy-btn">Buy Now</button>
+            
+          </section>
+<!-- Footer   -->
+<footer class="footer">
+  <a href="https://www.facebook.com/">Facebook</a><a class="fa fa-facebook"></a>
+
+  <a href="https://www.instagram.com/">Instagram</a><a class="fa fa-instagram"></a>
+  <a href="https://www.youtube.com/">Youtube</a><a class="fa fa-youtube"></a>
+<p class="copy">Copyright @ 2022 | All Rights Reserved.</p>
+</footer> 
+
+</body>
+
+</html>
